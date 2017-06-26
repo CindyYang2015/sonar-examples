@@ -8,8 +8,11 @@
   <version>1.0-SNAPSHOT</version>
 
   <name>Java :: UT Coverage with JaCoCo :: Maven</name>
-  <properties>
+ <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <sonar.language>java</sonar.language>
+    <!--  Feed SonarQube with the JaCoCo integration tests coverage report (that you have previously generated) -->
+    <destFile>${project.basedir}/../../target/jacoco.exec</destFile>
   </properties>
 
   <dependencies>
