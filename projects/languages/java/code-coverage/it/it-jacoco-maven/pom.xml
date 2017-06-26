@@ -11,13 +11,7 @@
  
    <artifactId>it-jacoco-maven</artifactId>
    <name>Java :: IT Coverage with JaCoCo :: Maven</name>
-  
-<properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <sonar.language>java</sonar.language>
-    <!--  Feed SonarQube with the JaCoCo integration tests coverage report (that you have previously generated) -->
-    <destFile>${project.basedir}/../../target/jacoco-it.exec</destFile>
-  </properties>
+ 
 
   <dependencies>
     <dependency>
@@ -43,41 +37,7 @@
     </plugins>
   </build>
 
-  
-  <!-- BEGIN: Specific to mapping unit tests and covered code -->
-  <profiles>
-    <profile>
-      <id>coverage-per-test</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <!-- Minimal supported version is 2.4 -->
-            <version>2.13</version>
-            <configuration>
-              <properties>
-                <property>
-                  <name>listener</name>
-                  <value>org.sonar.java.jacoco.JUnitListener</value>
-                </property>
-              </properties>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-
-      <dependencies>
-        <dependency>
-          <groupId>org.sonarsource.java</groupId>
-          <artifactId>sonar-jacoco-listeners</artifactId>
-          <version>3.8</version>
-          <scope>test</scope>
-        </dependency>
-      </dependencies>
-    </profile>
-  </profiles>
-  <!-- END: Specific to mapping unit tests and covered code -->
+ 
   
 
 </project>
