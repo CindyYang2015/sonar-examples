@@ -29,13 +29,12 @@
       <scope>test</scope>
     </dependency>
 	
-	<dependencies>
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>it-jacoco-maven</artifactId>
       <version>${project.version}</version>
     </dependency>
-</dependencies>
+
   </dependencies>
 
   <build>
