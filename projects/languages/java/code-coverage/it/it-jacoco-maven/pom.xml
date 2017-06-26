@@ -9,7 +9,7 @@
   <version>1.0-SNAPSHOT</version>
  </parent>
  
-   <artifactId>ut/ut-maven-jacoco</artifactId>
+   <artifactId>it-jacoco-maven</artifactId>
    <name>Java :: IT Coverage with JaCoCo :: Maven</name>
   
   
