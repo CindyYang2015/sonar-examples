@@ -12,7 +12,7 @@
 
   <modules>
     <module>it/it-jacoco-maven</module>
-    <module>ut</module>
+    <module>ut/ut-maven-jacoco</module>
   </modules>
 
   <properties>
