@@ -11,7 +11,7 @@
   <name>Java :: JaCoco Multi Modules :: Parent</name>
 
   <modules>
-    <module>it</module>
+    <module>it/it-jacoco-maven</module>
     <module>ut</module>
   </modules>
 
